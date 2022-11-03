@@ -2,3 +2,12 @@ a{
     text-decoration: none;
     color: darkslategray;
 }
+a:hover{
+    color: darkorchid;
+}
+body{
+    background-color: gainsboro;
+}
+.active{
+    background-color: coral;
+}
