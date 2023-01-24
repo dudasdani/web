@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsiv oldal</title>
+<link rel="apple-touch-icon" sizes="180x180" href="Dani.png">
+<link rel="icon" type="image/png" sizes="32x32" href="Dani.png">
+<link rel="icon" type="image/png" sizes="16x16" href="Dani.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.menu a {
+  background-color: #dfdede;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: rgb(0, 0, 0);
+}
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+}
+
+.right {
+  background-color: #dfdede;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+footer {
+        margin-top: 3%;
+        text-align: center;
+        padding: 3px;
+        background-color: rgb(255, 255, 255);
+        color: white;
+      }
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+h1{
+  text-align:center;
+  font-size: 250%;
+  margin: 0px 0px 10px;
+  color:  #eb7100;
+
+}
+.body{
+  background-color: black;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0px;
+}
+
+</style>
+</head>
+<body>
+  <div class="h1">
+    <h1>Dudás Dani oldala</h1>
+  </div>
+  <div style="overflow:auto">
+    <div class="menu">
+      <a href="index.html">home</a>
+      <a href="keplink.html">Kép+Link</a>
+      <a href="keret.html">Évszakok</a>
+      <a href="lista.html">Listák</a>
+      <a href="orarend.html">Órarend</a>
+      <a href="urlap.html">Űrlap</a>
+      <a href="szam.html">Számológép</a>
+      <a href="homoktovis.html">homoktövis</a>
+      </div>
+    <div class="main">
+      <form action="javascript:void(0)">
+          <fieldset>
+              <legend>számol</legend>
+              <br>
+              <input type="number" name="sz" id="a" placeholder="szam1" required >
+              <input type="number" name="sz" id="b" placeholder="szam2" required >
+              <input type="text" name="sz" id="c" placeholder="eredmény" readonly >
+              <br>
+              <input type="submit" value="+" onclick="ad()" >
+              <input type="submit" value="-" onclick="ki()" >
+              <input type="submit" value="*" onclick="szor()" >
+              <input type="button" value="/" onclick="ossz()" >
+              <input type="reset" value="törlés">
+          </fieldset>
+      </form>
+      <script>
+          function ad() {
+              c.value =Number(a.value) + Number(b.value)
+          }
+          function ki() {
+              c.value =Number(a.value) - Number(b.value)
+          }
+          function szor() {
+              c.value =Number(a.value) * Number(b.value)
+          }
+          function ossz() {
+              c.value =Number(a.value) / Number(b.value)
+          }
+      </script>
+    </div>
+      <div class="right">
+        
+         
+          <p><b>Itt látható a kollazs képem</b></p>
+          <img src="../DD kollazs/img/DD kollazs.jpg" alt="az én kollázs képem" title="kollázs" width="50%">
+      </div>    
+      <div class="footer">
+        <footer>
+          <p>copyright</p>
+          <p><a href="dudasd@kkszki.com"></a></p>
+        </footer>
+      </div> 
+    
+</body>
+</html>

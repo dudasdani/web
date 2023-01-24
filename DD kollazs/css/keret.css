@@ -1,0 +1,19 @@
+
+
+
+.kepek{
+   float: left;
+}
+
+img{
+    border: 5px solid rgb(4, 125, 254);
+    border-radius: 3%;
+    width: 200px;
+    margin:20px;
+    transition: 1s;
+
+}
+
+img:hover{
+    transform: scale(1.1);
+}
