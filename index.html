@@ -4,55 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Dani oldala</title>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="Dani.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="Dani.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="Dani.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <style>
-      
-      footer {
-          text-align: center;
-          padding: 3px;
-          background-color: rgb(0, 0, 0);
-          color: white;
-        }
-  </style>
-      </head>
-      <body>
-      
-      <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="keplink.html">KÉP+LINK</a></li>
-        <li><a href="lista.html">LISTÁK</a></li>
-        <li><a href="orarend.html">ÓRAREND</a></li>
-        <li><a href="urlap.html">ÜRLAP</a></li>
-        <li><a href="keret.html">ÉVSZAKOK</a></li>
-        <li><a href="responsive.html">RESPONSIV OLDAL</a></li>
-        <li><a href="homoktovis.html">homoktövis</a></li>
-      </ul>
-      
+    <title>Regisztráció</title>
 </head>
 <body>
-    <br>
-    <h1>Dudás Dániel</h1>
-    <h2>Dudás Dániel</h2>
-    <h3>Dudás Dániel</h3>
-    <h4>Dudás Dániel</h4>
-    <h5>Dudás Dániel</h5>
-    <h6>Dudás Dániel</h6>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <p><b>Itt látható a kollazs képem</b></p>
-    
-  
-    <img src="DD kollazs.jpg" alt="az én kollázs képem" title="kollázs" width="50%">
-    <footer>
-      <p>copyright</p>
-      <p><a href="dudasd@kkszki.com">dudasd@kkszki.hu</a></p>
-    </footer>
+
+    <form action="javascript:csinald()">
+        <fieldset>
+            <legend>regisztráció</legend>
+            <input type="email" name="mail" id="mail" placeholder="Email" >
+             <input type="password" name="pass" id="pass" placeholder="Jelszó" >
+             <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <script>
+        function csinald() {
+            if (mail.value=="") {
+               alert("Nem adtál emailt! ") 
+            }
+            if (pass.value == "kisabdul") {
+                alert("Belépés engedélyezve!")
+                window.open("https://dudasdani.github.io/web/")
+            }
+            else if (pass.value == "") {
+                alert("Nem adtál meg jelszót")
+            }
+            else{
+                alert("Hibás jelszó")
+            }
+        }
+
+    </script>
 </body>
 </html>

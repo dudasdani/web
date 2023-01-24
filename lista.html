@@ -1,72 +1,111 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>LISTÁK</title>
-    <style>
-        footer {
-            text-align: center;
-            padding: 3px;
-            background-color: rgb(0, 0, 0);
-            color: white;
-          }
-    </style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsiv oldal</title>
+<link rel="apple-touch-icon" sizes="180x180" href="Dani.png">
+<link rel="icon" type="image/png" sizes="32x32" href="Dani.png">
+<link rel="icon" type="image/png" sizes="16x16" href="Dani.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.menu a {
+  background-color: #e5e5e5;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+}
+
+.right {
+  background-color: #e5e5e5;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
 </head>
-<body>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="keplink.html">KÉP+LINK</a></li>
-        <li><a class="active" href="lista.html">LISTÁK</a></li>
-        <li><a href="orarend.html">ÓRAREND</a></li>
-        <li><a href="urlap.html">ÜRLAP</a></li>
-        <li><a href="keret.html">ÉVSZAKOK</a></li>
-        <li><a href="responsive.html">RESPONSIVE OLDAL</a></li>
-        <li><a href="homoktovis.html">homoktövis</a></li>
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+<div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+  <h1>Dudás Dani oldala</h1>
+</div>
+
+<div style="overflow:auto">
+    <div class="menu">
+      <a href="index.html">home</a>
+      <a href="keplink.html">Kép+Link</a>
+      <a href="keret.html">Évszakok</a>
+      <a href="lista.html">Listák</a>
+      <a href="orarend.html">Órarend</a>
+      <a href="urlap.html">Űrlap</a>
+      <a href="szam.html">Számológép</a>
+      <a href="homoktovis.html">homoktövis</a>
+      </div>
+
+    <div class="main">
+        <p style="background-color:cadetblue;width: 300px;"> A Kedvenc Tantárgyaim</p><br>
+        <ol style="color:rgb(4, 0, 255) ;">
+        <li>
+            matek
+        </li>
+        <br>
+        <li>
+            Irodalom
+        </li>
+        <br>
+        <li>
+            ikt
+        </li>
+        <br>
         
-      </ul>>
-    <p style="background-color:cadetblue;width: 300px;"> A Kedvenc Tantárgyaim</p><br>
-    <ol style="color:rgb(4, 0, 255) ;">
-    <li>
-        matek
-    </li>
-    <br>
-    <li>
-        Irodalom
-    </li>
-    <br>
-    <li>
-        ikt
-    </li>
-    <br>
-    
-    </ol>
-    <p style="background-color:red ;width: 300px;"> A Kedvenc Szabadidős Tevékenységeim</p><br>
-    <ul style="color:rgb(255, 94, 0) ;">
-    <li type="circle">
-        Labdarúgás
-    </li>
-    <br>
-    <li type="disk">
-        futás
-    </li>
-    <br>
-    <li type="square">
-        video játékok
-    </li>
-    <br>
-    
-    
-    
-    </ul>
+        </ol>
+        <p style="background-color:red ;width: 300px;"> A Kedvenc Szabadidős Tevékenységeim</p><br>
+        <ul style="color:rgb(255, 94, 0) ;">
+        <li type="circle">
+            Labdarúgás
+        </li>
+        <br>
+        <li type="disk">
+            futás
+        </li>
+        <br>
+        <li type="square">
+            video játékok
+        </li>
+        <br>
+           
     <footer>
         <p>copyright</p>
         <p><a href="dudasd@kkszki.com">dudasd@kkszki.hu</a></p>
     </footer>
-
-    
-    
+    </div> 
 </body>
 </html>
