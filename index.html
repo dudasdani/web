@@ -1,38 +1,110 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regisztráció</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsiv oldal</title>
+<link rel="apple-touch-icon" sizes="180x180" href="Dani.png">
+<link rel="icon" type="image/png" sizes="32x32" href="Dani.png">
+<link rel="icon" type="image/png" sizes="16x16" href="Dani.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<style>
+
+
+</style>
 </head>
-<body>
+<div class="body">
+  <body style="font-family:Verdana;color:#aaaaaa;">
+    <style>
+     * {
+  box-sizing: border-box;
+}
 
-    <form action="javascript:csinald()">
-        <fieldset>
-            <legend>regisztráció</legend>
-            <input type="email" name="mail" id="mail" placeholder="Email" >
-             <input type="password" name="pass" id="pass" placeholder="Jelszó" >
-             <input type="submit" value="Submit">
-        </fieldset>
-    </form>
-    <script>
-        function csinald() {
-            if (mail.value=="") {
-               alert("Nem adtál emailt! ") 
-            }
-            if (pass.value == "kisabdul") {
-                alert("Belépés engedélyezve!")
-                window.open("https://dudasdani.github.io/web/")
-            }
-            else if (pass.value == "") {
-                alert("Nem adtál meg jelszót")
-            }
-            else{
-                alert("Hibás jelszó")
-            }
-        }
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
 
-    </script>
-</body>
+.menu a {
+  background-color: #e5e5e5;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+}
+
+.right {
+  background-color: #e5e5e5;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+footer {
+        margin-top: 3%;
+        text-align: center;
+        padding: 3px;
+        background-color: rgb(255, 255, 255);
+        color: white;
+      }
+    </style>
+  <div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+    <h1>Dudás Dani oldala</h1>
+  </div>
+  <div style="overflow:auto">
+    <div class="menu">
+      <a href="index.html">home</a>
+      <a href="keplink.html">Kép+Link</a>
+      <a href="keret.html">Évszakok</a>
+      <a href="lista.html">Listák</a>
+      <a href="orarend.html">Órarend</a>
+      <a href="urlap.html">Űrlap</a>
+      <a href="szam.html">Számológép</a>
+      <a href="homoktovis.html">homoktövis</a>
+      </div>
+  </head>
+  <body>
+           <div class="main">
+            <br>
+            <h2>Dudás Dániel</h2>
+            <h3>Dudás Dániel</h3>
+            <h4>Dudás Dániel</h4>
+            <h5>Dudás Dániel</h5>
+            <h6>Dudás Dániel</h6>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+           </div>
+  <div class="right">
+    
+        <h2>Itt látható a kollázs képem</h2>
+        <img src="../DD kollazs/img/DD kollazs.jpg" alt="az én kollázs képem" title="kollázs" width="50%">
+        <h2>Rólam</h2>
+        <h3>
+          Kandós diák vagyok mindent is tudok!
+        </h3>
+  </div>
+          <div class="footer">
+            <footer>
+              <p>copyright</p>
+              <p><a href="dudasd@kkszki.com">dudasd@kkszki.hu</a></p>
+            </footer>
+          </div>
+  </body>
+</div>
 </html>
